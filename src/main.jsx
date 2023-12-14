@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
-import Contact from './Contact.jsx'
-import About from './About.jsx'
-import Resume from './Resume.jsx'
-import Portfolio from './Portfolio.jsx'
+import Contact from './components/Contact.jsx' 
+import About from './components/About.jsx'
+import Resume from './components/Resume.jsx'
+import Portfolio from './components/Portfolio.jsx'
 
 const BrowserRouter = createBrowserRouter([
   {

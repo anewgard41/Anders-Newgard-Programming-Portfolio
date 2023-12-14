@@ -1,6 +1,6 @@
 import Header from './components/Header'
-// import Footer from './components/Footer'
-// import MainPage from './components/MainPage'
+import Footer from './components/Footer'
+import MainPage from './components/MainPage'
 import Nav from './components/Nav'
 import { useLocation } from 'react-router-dom'
 import './App.css'
@@ -13,8 +13,8 @@ function App() {
       <Header >
       <Nav currentPage={currentPage} />
       </Header>
-      {/* <MainPage currentPage={currentPage} /> */}
-      {/* <Footer /> */}
+      <MainPage currentPage={currentPage} />
+      <Footer />
     </div>
   )
 }

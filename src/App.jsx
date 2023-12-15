@@ -13,7 +13,9 @@ function App() {
       <Header >
       <Nav currentPage={currentPage} />
       </Header>
+      <main>
       <MainPage currentPage={currentPage} />
+      </main>
       <Footer />
     </div>
   )

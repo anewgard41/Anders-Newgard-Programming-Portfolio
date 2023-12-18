@@ -10,7 +10,7 @@ function MainPage(currentPage) {
 
     return (
         <div>
-        <Outlet />
+            <Outlet />
         </div>
     );
 }

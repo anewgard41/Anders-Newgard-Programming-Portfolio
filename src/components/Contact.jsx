@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { validateEmail } from '../util/helpers';
 
 function Contact() {
-  
+
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
@@ -23,13 +23,13 @@ function Contact() {
                 setErrorMessage('');
             }
         }
-      };
-        
-     const handleSubmit = (e) => {
-      e.preventDefault();
-      if (!errorMessage) {
-          console.log('Submit Form', formState);
-      }; 
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!errorMessage) {
+            console.log('Submit Form', formState);
+        };
     }
 
     return (
@@ -58,7 +58,7 @@ function Contact() {
         </section>
     );
 
-  }
-           
+}
+
 
 export default Contact;

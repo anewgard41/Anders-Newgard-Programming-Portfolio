@@ -1,4 +1,4 @@
-function Project ({ project }) {
+function Project({ project }) {
     const { name, description, link } = project;
 
     return (

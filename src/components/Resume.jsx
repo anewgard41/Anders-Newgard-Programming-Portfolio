@@ -1,4 +1,4 @@
-function Resume () {
+function Resume() {
     return (
         <div className="m-3">
             <h1>Resume</h1>

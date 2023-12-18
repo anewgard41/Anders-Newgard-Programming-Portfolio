@@ -22,7 +22,17 @@ function Portfolio () {
             name: 'TechCorner Blog',
             description: 'Share your tech experiences and read about others!',
             link: "https://tech-corner-blog-1cafda2ed479.herokuapp.com/"
-        }
+        },
+        {
+            name: 'Installable Text Editor',
+            description: 'Text editor that can be installed on your computer!',
+            link: "https://installable-text-editor-with-webpack.onrender.com/"
+        },
+        {
+            name: 'Simple Note Taker',
+            description: 'An alternative note taker that saves your notes for later! Only available in a browser.',
+            link: "https://whispering-journey-91261-71280760acc3.herokuapp.com/"
+        },
     ]);
 
     return (

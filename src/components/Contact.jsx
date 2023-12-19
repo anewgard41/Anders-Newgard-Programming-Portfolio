@@ -7,6 +7,7 @@ function Contact() {
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
 
+    
     const handleChange = (e) => {
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
@@ -53,7 +54,8 @@ function Contact() {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button className=" py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded" type="submit">Submit</button>
+                {/* submit button currently doesn't send a message. Will try to implement in future dev. */}
+                <button onSubmit className="py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded" type="submit">Submit</button>
             </form>
         </section>
     );

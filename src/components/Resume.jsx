@@ -6,6 +6,7 @@ function Resume() {
 
             <section className="p-2">
                 <h2>Want to skip skimming the resume? Here is a quick bullet list of my programming proficiencies.</h2>
+                {/* Styling for list and headers */}
                 <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Front End Proficiencies</h2>
                 <ul className="text-white-500 list-disc list-inside">
                     <li>HTML</li>

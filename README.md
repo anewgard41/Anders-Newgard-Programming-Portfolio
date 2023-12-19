@@ -13,6 +13,9 @@ This is my portfolio created with React. It contains a short bio, a list of my p
 
 [Click here to check out the deployed site](https://shiny-moonbeam-66a10c.netlify.app/)
 
+A screenshot of the landing page:
+![Screenshot of the landingpage](/public/image.png)
+
 ## Technologies Used
 
 Primarily used react and the frameworks that come with it. For styling, I used Tailwind CSS as it's the css framework I'm most familiar with. I also used react-router-dom for routing. 

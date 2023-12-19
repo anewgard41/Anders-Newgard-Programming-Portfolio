@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
+// importing components
 import Contact from './components/Contact.jsx' 
 import About from './components/About.jsx'
 import Resume from './components/Resume.jsx'
@@ -14,6 +15,7 @@ const BrowserRouter = createBrowserRouter([
     element: <App />,
     children: [
       {
+        // index is the default route. It will be rendered if no other route matches. 
         index: true,
         element: <About />,
       },
@@ -33,7 +35,7 @@ const BrowserRouter = createBrowserRouter([
   },
 ]);
 
-
+// This is the root of our app. We render our Router and pass it our BrowserRouter.
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={BrowserRouter} />
 );

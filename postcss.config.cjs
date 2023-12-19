@@ -1,4 +1,5 @@
 module.exports = {
+  // tailwinds configuation
     plugins: [
       require('tailwindcss'),
       require('autoprefixer'),

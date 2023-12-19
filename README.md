@@ -11,7 +11,7 @@
 
 This is my portfolio created with React. It contains a short bio, a list of my projects, and a contact form. It also has links to my GitHub and LinkedIn profiles, as well as my resume. Was a joy to work on, react is so much fun. Hope y'all enjoy! 
 
-Here is a link to the deployed site: 
+[Click here to check out the deployed site](https://shiny-moonbeam-66a10c.netlify.app/)
 
 ## Technologies Used
 

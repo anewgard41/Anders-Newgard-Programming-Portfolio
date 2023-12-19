@@ -2,34 +2,41 @@ import { useState } from 'react';
 import { validateEmail } from '../util/helpers';
 
 function Contact() {
-
+    // Using useState, we can initialize the state of the form with an empty name, email, and message property.
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    // Using object destructuring, we can extract the name, email, and message properties from formState into their own variables.
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
 
-    
+    // Using the onBlur prop, we can call the handleChange function when a user leaves an input field, but only if the field has been filled out incorrectly.
     const handleChange = (e) => {
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
-
+            // isValid conditional statement. Error message set to empty if email is valid. If email is invalid, error message is set to 'Please enter a valid email address.'
             if (!isValid) {
                 setErrorMessage('Please enter a valid email address.');
             } else {
                 setErrorMessage('');
             }
         } else {
+            // If the name field is empty, an error message is set to 'Name is required.' If the name field is filled out, the error message is set to empty.
             if (!e.target.value.length) {
                 setErrorMessage(`${e.target.name} is required.`);
             } else {
                 setErrorMessage('');
             }
         }
+        // If there is no error message, the formState is updated with either the name, email, or message value from the appropriate input field.
+        if (!errorMessage) {
+            setFormState({ ...formState, [e.target.name]: e.target.value });
+            console.log('Handle Form', formState);
+        }
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!errorMessage) {
-            console.log('Submit Form', formState);
+            alert(`Thank you for your message, ${name}!`);
         };
     }
 
@@ -54,8 +61,8 @@ function Contact() {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                {/* submit button currently doesn't send a message. Will try to implement in future dev. */}
-                <button onSubmit className="py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded" type="submit">Submit</button>
+                {/* submit button currently doesn't send a message, just logs formState variable. Will try to implement in future dev. For now just thanks user for submitting. */}
+                <button className="py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded" type="submit">Submit</button>
             </form>
         </section>
     );
